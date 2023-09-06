@@ -14,7 +14,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var currentHost = window.location.host;
-      if (currentHost.includes("github.io")) {
+      if (currentHost.endsWith("github.io")) {
         var pageImage = document.getElementById("pageImage");
         if (pageImage) { // if pageImage exists
           pageImage.src = "https://picsum.photos/id/200/200/300";
