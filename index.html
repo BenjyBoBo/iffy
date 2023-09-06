@@ -12,15 +12,11 @@
   </main>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      if (window.location.host.endsWith("github.io")) {
-        var pageImage = document.getElementById("pageImage");
-        if (pageImage) { // if pageImage exists
-          pageImage.src = "https://picsum.photos/id/200/200/300";
-          pageImage.alt = "image displayed because ON github pages";
-        }
-      }
-    });
+    if (window.location.host.endsWith("github.io")) {
+      var pageImage = document.getElementById("pageImage");
+      pageImage.src = "https://picsum.photos/id/200/200/300";
+      pageImage.alt = "image displayed because ON github pages";
+    }
   </script>
 </body>
 </html>
