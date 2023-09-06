@@ -9,16 +9,15 @@
   <main>
     <h1>Iffy</h1>
     <img src="https://picsum.photos/id/343/200/300" alt="image displayed because not github pages">
+    <script>
+      console.log(window.location.host);
+      var currHost = window.location.host;
+      if (currHost.includes("github.io")) {
+        var pageImage = document.getElementById("pageImage");
+        pageImage.src = "https://picsum.photos/id/200/200/300";
+        pageImage.alt = "image displayed because ON github pages";
+      }
+    </script>
   </main>
-
-  
-  <script>
-    var currHost = window.location.host;
-    if (currHost.includes("github.io")) {
-      var pageImage = document.getElementById("pageImage");
-      pageImage.src = "https://picsum.photos/id/200/200/300";
-      pageImage.alt = "image displayed because ON github pages";
-    }
-  </script>
 </body>
 </html>
